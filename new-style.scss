@@ -1,9 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
 /*---------------------------------------- start of section 1 ----------------------------------------------*/
+
 /*----------------------------------------- end of section 1 ----------------------------------------------*/
 
 
 
 /*---------------------------------------- start of section 2 ----------------------------------------------*/
+
+.container{
+    background-color: hsl(0, 0%, 96%);
+    padding: 60px;
+}
+
+.parent{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .child {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    h3{
+        text-align: center;
+    }
+    
+    p{
+        color: #777;
+        font-size: 17px;
+    }
+    
+}
+.fas , .far{
+    font-family: "Font Awesome 5 Free"; 
+    font-size: 3em;   
+    color: #10cab7;      
+    padding: 10px; 
+}
+.fas{
+    font-weight: 900;  
+}
+
+
 /*----------------------------------------- end of section 2 ----------------------------------------------*/
 
 
