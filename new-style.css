@@ -120,17 +120,17 @@ body {
   font-size: 100px;
 }
 
-.info {
+.info2 {
   text-align: center;
 }
-.info .label {
+.info2 .label {
   font-size: 35px;
   font-weight: 800;
   color: #2c4755;
   letter-spacing: -2px;
   margin-bottom: 15px;
 }
-.info .link {
+.info2 .link {
   color: #10cab7;
   cursor: pointer;
   background-color: transparent;
@@ -140,7 +140,7 @@ body {
   text-decoration: none;
   margin-bottom: -40px;
 }
-.info .social {
+.info2 .social {
   margin-top: 53px;
   font-size: 14px;
   font-weight: 100;
