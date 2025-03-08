@@ -1,80 +1,122 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 /*---------------------------------------- start of section 1 ----------------------------------------------*/
 
 /*----------------------------------------- end of section 1 ----------------------------------------------*/
 
-
-
 /*---------------------------------------- start of section 2 ----------------------------------------------*/
 
-.container{
-    background-color: hsl(0, 0%, 96%);
-    padding: 60px;
+.container {
+  background-color: hsl(0, 0%, 96%);
+  padding: 60px;
 }
 
-.parent{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+.parent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 
-    .child {
-        padding: 20px;
-        text-align: center;
-    }
-    
-    h3{
-        text-align: center;
-    }
-    
-    p{
-        color: #777;
-        font-size: 17px;
-    }
-    
-}
-.fas , .far{
-    font-family: "Font Awesome 5 Free"; 
-    font-size: 3em;   
-    color: #10cab7;      
-    padding: 10px; 
-}
-.fas{
-    font-weight: 900;  
-}
+  .child {
+    padding: 20px;
+    text-align: center;
+  }
 
+  h3 {
+    text-align: center;
+  }
+
+  p {
+    color: #777;
+    font-size: 17px;
+  }
+}
+.fas,
+.far {
+  font-family: "Font Awesome 5 Free";
+  font-size: 3em;
+  color: #10cab7;
+  padding: 10px;
+}
+.fas {
+  font-weight: 900;
+}
 
 /*----------------------------------------- end of section 2 ----------------------------------------------*/
-
-
 
 /*---------------------------------------- start of section 3 ----------------------------------------------*/
 /*----------------------------------------- end of section 3 ----------------------------------------------*/
 
-
-
-
 /*---------------------------------------- start of section 4 ----------------------------------------------*/
+.sec4 {
+    background-color: hsl(0, 0%, 96%);
+    padding: 60px;
+    margin-top: 50px;
+}
+.port {
+    text-align: center;
+    color: hsl(0, 4%, 91%);
+    font-size: 100px;
+}
+.heading{
+    position: relative;
+    p{
+        position: absolute;
+        text-align: center;
+        color: hsl(0, 1%, 58%);
+        font-size: 24px;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 400;
+    }
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    //gap: 20px;
+
+    .card{
+        background-color: white;
+        margin: 16px;
+        .info{
+            padding: 20px;
+        }
+    }    
+
+    .card img{
+        max-width: 100%;
+    }
+
+    img{
+        border-style: none;
+    }
+
+    h2{
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    p{
+        color: hsl(0, 1%, 58%);
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
 /*----------------------------------------- end of section 4 ----------------------------------------------*/
-
-
 
 /*---------------------------------------- start of section 5 ----------------------------------------------*/
 /*----------------------------------------- end of section 5 ----------------------------------------------*/
 
-
-
 /*---------------------------------------- start of section 6 ----------------------------------------------*/
 /*----------------------------------------- end of section 6 ----------------------------------------------*/
-
-
