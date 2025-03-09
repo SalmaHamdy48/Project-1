@@ -1,20 +1,8 @@
+
 *{
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Work Sans", sans-serif;
-    margin: 0;
-}
-.fas , .far , .fab{
-    font-family: "Font Awesome 5 Free"; 
-    font-size: 3em;   
-    color: #10cab7;      
-    padding: 10px; 
-}
-.fas{
-    font-weight: 900;  
-}
 
 @mixin breakpoint($size)
 {
@@ -168,17 +156,56 @@ body {
 }
 /*----------------------------------------- end of section 1 ----------------------------------------------*/
 
+body {
+  font-family: "Work Sans", sans-serif;
+}
 
+/*---------------------------------------- start of section 1 ----------------------------------------------*/
+
+/*----------------------------------------- end of section 1 ----------------------------------------------*/
 
 /*---------------------------------------- start of section 2 ----------------------------------------------*/
 
+.sec2{
+  background-color: hsl(0, 0%, 96%);
+  padding: 60px;
+}
 
+.parent {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 
+  .child {
+    padding: 20px;
+    text-align: center;
+  }
 
+  h3 {
+    text-align: center;
+  }
+
+  p {
+    color: #777;
+    font-size: 17px;
+  }
+}
+.fas,
+.far {
+  font-family: "Font Awesome 5 Free";
+  font-size: 3em;
+  color: #10cab7;
+  padding: 10px;
+}
+.fas {
+  font-weight: 900;
+}
 
 /*----------------------------------------- end of section 2 ----------------------------------------------*/
-
-
 
 /*---------------------------------------- start of section 3 ----------------------------------------------*/
 #sec3 {
@@ -278,13 +305,64 @@ body {
   
 /*----------------------------------------- end of section 3 ----------------------------------------------*/
 
-
-
-
 /*---------------------------------------- start of section 4 ----------------------------------------------*/
+.sec4 {
+    background-color: hsl(0, 0%, 96%);
+    padding: 60px;
+    margin-top: 50px;
+}
+.port {
+    text-align: center;
+    color: hsl(0, 4%, 91%);
+    font-size: 100px;
+}
+.heading{
+    position: relative;
+    p{
+        position: absolute;
+        text-align: center;
+        color: hsl(0, 1%, 58%);
+        font-size: 24px;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 400;
+    }
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    //gap: 20px;
+
+    .card{
+        background-color: white;
+        margin: 16px;
+        .info{
+            padding: 20px;
+        }
+    }    
+
+    .card img{
+        max-width: 100%;
+    }
+
+    img{
+        border-style: none;
+    }
+
+    h2{
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    p{
+        color: hsl(0, 1%, 58%);
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
 /*----------------------------------------- end of section 4 ----------------------------------------------*/
-
-
 
 /*---------------------------------------- start of section 5 ----------------------------------------------*/
 #sec5{
@@ -383,9 +461,77 @@ body {
 
 /*----------------------------------------- end of section 5 ----------------------------------------------*/
 
-
-
 /*---------------------------------------- start of section 6 ----------------------------------------------*/
+.sec6 {
+    background-color: hsl(0, 0%, 96%);
+    padding: 60px;
+    margin-top: 20px;
+}
+
+.contact {
+    text-align: center;
+    color: hsl(0, 4%, 91%);
+    font-size: 100px;
+    
+    
+    
+}
+
+.info2{
+    text-align: center;
+    .label{
+        font-size: 35px;
+        font-weight: 800;
+        color: #2c4755;
+        letter-spacing: -2px;
+        margin-bottom: 15px;
+    }
+
+    .link{
+        color: #10cab7;
+        cursor: pointer;
+        background-color: transparent;
+        display: block;
+        font-size: 35px;
+        font-weight: 800;
+        text-decoration: none;
+        margin-bottom: -40px;      
+    }
+
+    .social{
+        margin-top: 53px; 
+        font-size: 14px;
+        font-weight: 100;
+        letter-spacing: 1px;
+    }
+}
+
+.heading2{
+    position: relative;
+    .p1{
+        position: absolute;
+        color: #797979;
+        font-size: 20px;
+        top: 23%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+}
 /*----------------------------------------- end of section 6 ----------------------------------------------*/
 
+/*----------------------------------------- start footer ----------------------------------------------*/
+.footer{
+    background-color: #2c4755;
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 18px;
 
+    span{
+        color:#10cab7 ;
+    }
+}
+
+/*----------------------------------------- end footer ----------------------------------------------*/
