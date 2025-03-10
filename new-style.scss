@@ -1,5 +1,13 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+section, .footer{
+    width: 100%;
+    padding: 0 auto;
 }
 
 @mixin breakpoint($size) {
@@ -357,7 +365,7 @@ body {
       grid-template-areas:
         "header header"
         "image content";
-      grid-template-columns: 40% 60%;
+      grid-template-columns: 40% 50%;
       gap: 50px;
     }
 
