@@ -5,9 +5,10 @@
 }
 
 
-section, .footer{
-    width: 100%;
-    padding: 0 auto;
+.sec-container{
+    width: 90%;
+    margin: 0 auto;
+    justify-items: center;
 }
 
 @mixin breakpoint($size) {
@@ -22,12 +23,14 @@ section, .footer{
 }
 
 .sec-header {
+  width: 80%;
+  justify-items: center;
   h1 {
     color: #ebeced;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 800;
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
     letter-spacing: -3px;
     @include breakpoint(640px) {
       font-size: 100px;
@@ -35,7 +38,7 @@ section, .footer{
     }
   }
   p {
-    margin: -30px 0 0;
+    margin: -30px auto 0;
     font-size: 20px;
     text-align: center;
     color: #797979;
@@ -49,7 +52,7 @@ section, .footer{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0px 90px;
+      padding: 0px 5%;
 
       img {
         width: 50px;
@@ -142,9 +145,19 @@ section, .footer{
     }
     p {
       margin: 0px;
-      width: 350px;
+      
       line-height: 1.8;
       font-size: 20px;
+      @include breakpointmax(640px){
+        width: 85%;
+      }
+      @media (min-width: 640px) and (max-width: 1024px) {
+        width: 50%;
+      }
+      @include breakpoint(1024px){
+        width: 25%;
+      }
+      
     }
   }
 }
@@ -163,25 +176,30 @@ body {
 
 .parent {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(1, 1fr);
   gap: 20px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
+  @include breakpoint( 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .child {
     padding: 20px;
     text-align: center;
+
   }
 
   h3 {
     text-align: center;
+    margin-bottom: 7px;
   }
 
   p {
     color: #777;
     font-size: 17px;
+    margin-bottom: 20px;
   }
 }
 .fas,
@@ -189,7 +207,7 @@ body {
   font-family: "Font Awesome 5 Free";
   font-size: 3em;
   color: #10cab7;
-  padding: 10px;
+  margin-bottom: 20px;
 }
 .fas {
   font-weight: 900;
@@ -216,8 +234,7 @@ body {
       width: 90%;
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      gap: 20px;
-      padding-left: 10%;
+      gap: 40px;
       flex: 1;
 
       @include breakpoint(640px) {
@@ -229,7 +246,6 @@ body {
         margin-bottom: 15px;
 
         i {
-          margin-top: 10px;
           color: #10cab7;
           margin-right: 15px;
         }
@@ -262,10 +278,13 @@ body {
       text-align: center;
       margin-right: 20px;
       position: relative;
-      @include breakpointmax(640px) {
+      @include breakpointmax(965px) {
         width: 0%;
+        &::before, &::after{
+          display: none;
+        }
       }
-      @include breakpoint(640px) {
+      @include breakpoint(966px) {
         width: 30%;
       }
 
@@ -291,7 +310,6 @@ body {
 /*---------------------------------------- start of section 4 ----------------------------------------------*/
 .sec4 {
   background-color: hsl(0, 0%, 96%);
-  padding: 60px;
   margin-top: 50px;
   @include breakpointmax(640px) {
     padding: 0px;
@@ -325,9 +343,12 @@ body {
 
 .content {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  //grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(1, 1fr);
   //gap: 20px;
-
+  @include breakpoint( 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .card {
     background-color: white;
     margin: 16px;
@@ -472,6 +493,9 @@ body {
     color: #2c4755;
     letter-spacing: -2px;
     margin-bottom: 15px;
+    @include breakpointmax(640px){
+      font-size: 30px;
+    }
   }
 
   .link {
@@ -483,7 +507,11 @@ body {
     font-weight: 800;
     text-decoration: none;
     margin-bottom: -40px;
+    @include breakpointmax(640px){
+      font-size: 25px;
+    }
   }
+
 
   .social {
     margin-top: 53px;
